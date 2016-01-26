@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]">
-  <parameter name="browser" value="firefox"/>
-  <test name="Test2(failed)">
+  <parameter name="browser" value="IE"/>
+  <test name="Test3(failed)">
     <parameter name="browser" value="IE"/>
     <classes>
       <class name="testCase.TestCaseForCreateReferralSourceAc">
         <methods>
           <include name="tearDown"/>
           <include name="blankSubmit"/>
+          <include name="verifyEmail"/>
           <include name="validLoginForNewAcCreate"/>
+          <include name="accNameVerify"/>
+          <include name="phoneNumberVerify"/>
           <include name="openBrowser"/>
           <include name="openBrowser"/>
           <include name="openBrowser"/>
@@ -28,8 +31,9 @@
       <class name="testCase.TestCaseForCreateNonIndiviualProviderAc">
         <methods>
           <include name="validLoginForNewAcCreate"/>
+          <include name="blankSubmit"/>
         </methods>
       </class> <!-- testCase.TestCaseForCreateNonIndiviualProviderAc -->
     </classes>
-  </test> <!-- Test2(failed) -->
+  </test> <!-- Test3(failed) -->
 </suite> <!-- Failed suite [Suite] -->

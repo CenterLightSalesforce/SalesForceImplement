@@ -54,6 +54,9 @@ public class StartUp {
 	@BeforeTest
 	public void openBrowser(String browserName )  {
 	
+	   org.apache.log4j.Logger.getRootLogger().setLevel(org.apache.log4j.Level.OFF);
+	   
+	   
 	   if(browserName.equalsIgnoreCase("firefox")){
 			driver=new FirefoxDriver();
 		}else if(browserName.equalsIgnoreCase("IE")){

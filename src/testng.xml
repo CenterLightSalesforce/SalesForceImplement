@@ -17,7 +17,7 @@
   
    
    <test name="Test2">
-   <parameter name="browser" value="IE"/>
+   <parameter name="browser" value="firefox"/>
      <classes>
       <class name="testCase.TestCaseForLogin"/>
       <class name="testCase.TestCaseForCreateMemberAcWithLogin"/>
@@ -29,7 +29,7 @@
   </test> <!-- Test -->
   
   <test name="Test3">
-   <parameter name="browser" value="firefox"/>
+   <parameter name="browser" value="IE"/>
      <classes>
       <class name="testCase.TestCaseForLogin"/>
       <class name="testCase.TestCaseForCreateMemberAcWithLogin"/>
