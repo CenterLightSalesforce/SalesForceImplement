@@ -35,20 +35,10 @@ public class TestCaseForCreateMemberAcWithLogin extends StartUp{
 	@Test(priority=1)
 	public void navigateToAccountPage() throws InterruptedException{
 		extent.startTest("TC02.2", "Navigate To Account Home Page");
-		//driver.findElement(By.xpath(".//*[@id='Account_Tab']/a")).click();
-		//Thread.sleep(1000);
 		 NavigateToOtherPage pageNavi=new NavigateToOtherPage(driver);
 		 pageNavi.navigateToAccountCreatePage("Member");
 		 Thread.sleep(1000);
 		extent.log(LogStatus.INFO, "Verify Navigation Syep 1","View details below:", ScreenShot.captureScreen(driver,"Account Home Page"));
-		//driver.findElement(By.xpath(".//*[@id='hotlist']/table/tbody/tr/td[2]/input")).click();
-		//Thread.sleep(1000);
-		//extent.log(LogStatus.INFO, "Verify Navigation Step 2","View details below:", ScreenShot.captureScreen(driver,"Account Home Page2"));
-		//driver.findElement(By.xpath(".//*[@id='bottomButtonRow']/input[1]")).click();
-		
-		//navi.navigateToAccountCreatePage();
-		//Thread.sleep(2000);
-		//extent.log(LogStatus.INFO, "Verify Navigation Step 3","View details below:", ScreenShot.captureScreen(driver,"Account Home Page3"));
 		extent.endTest();
 	}
 	

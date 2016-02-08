@@ -2,6 +2,27 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]">
   <parameter name="browser" value="IE"/>
+  <test name="Test2(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="testCase.TestCaseForCreateReferralSourceAc">
+        <methods>
+          <include name="tearDown"/>
+          <include name="openBrowser"/>
+          <include name="openBrowser"/>
+          <include name="openBrowser"/>
+          <include name="reportIni"/>
+        </methods>
+      </class> <!-- testCase.TestCaseForCreateReferralSourceAc -->
+      <class name="testCase.TestCaseForCreateMemberAcWithLogin">
+        <methods>
+          <include name="enterBlankDataIntoMemberAc"/>
+          <include name="navigateToAccountPage"/>
+          <include name="enterInvalidSsn"/>
+        </methods>
+      </class> <!-- testCase.TestCaseForCreateMemberAcWithLogin -->
+    </classes>
+  </test> <!-- Test2(failed) -->
   <test name="Test3(failed)">
     <parameter name="browser" value="IE"/>
     <classes>
@@ -9,7 +30,6 @@
         <methods>
           <include name="tearDown"/>
           <include name="blankSubmit"/>
-          <include name="verifyEmail"/>
           <include name="validLoginForNewAcCreate"/>
           <include name="accNameVerify"/>
           <include name="phoneNumberVerify"/>
@@ -19,12 +39,15 @@
           <include name="reportIni"/>
         </methods>
       </class> <!-- testCase.TestCaseForCreateReferralSourceAc -->
-      <class name="testCase.TestCaseForCreateNonIndiviualProviderAc">
+      <class name="testCase.TestCaseForCreateIndiviualProviderAc">
         <methods>
+          <include name="lastNameVerify"/>
+          <include name="createANewAcc"/>
           <include name="validLoginForNewAcCreate"/>
           <include name="blankSubmit"/>
+          <include name="EmailVerify"/>
         </methods>
-      </class> <!-- testCase.TestCaseForCreateNonIndiviualProviderAc -->
+      </class> <!-- testCase.TestCaseForCreateIndiviualProviderAc -->
     </classes>
   </test> <!-- Test3(failed) -->
 </suite> <!-- Failed suite [Suite] -->
